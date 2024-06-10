@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  nginx1:
+    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8080:80"
+  
+  nginx2:
+    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8081:80"
+  
+  nginx3:
+    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8082:80"
+  
+  nginx4:
+    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8083:80"
+  
+  nginx5:
+    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8084:80"
+  
+  nginx6:
+    image: my-nginx-container
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8085:80"
